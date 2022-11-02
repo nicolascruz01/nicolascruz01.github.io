@@ -4,71 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="style.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
     <title>Planes</title>
+
 </head>
-<body>
-    <header>    
-        <!--menu inicial, se debe quedar estatico a lo largo de la pagina-->
-        <nav>
-            <div class="menu-container">      
-                    <ul class="menu">
-                        <li>
-                            <a href="./index.html">
-                                <img src="./images/logo-hotel-santa-cruz-bogota.png" alt="Logo Hotel Santa Cruz Bogota" class="logo">
+
+<body class="bg-dark text-white">
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark px-3 py-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#Inicio">
+                    <img src="./images/logo-hotel-santa-cruz-bogota.png" alt="Logo Hotel Santa Cruz Bogota" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-middle" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-around w-100 p-3 fs-4 d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./planes.html">Planes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://es-la.facebook.com/HotelSantaCruzCorferias/">
+                                <img src="./images/logo-facebook.png" alt="Logo facebook" class="img-fluid">
                             </a>
                         </li>
-                        <li>
-                            <a href="./index.html">
-                                    Inicio
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/hotelsantacruzbogota/">
+                                <img src="./images/logo-instagram.png" alt="Logo instagram" class="img-fluid">
                             </a>
                         </li>
-                        <li>
-                            <a href="./galeria.html">
-                                    Galeria
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./planes.html">
-                                    Planes
-                            </a>
-                        </li>
-                         <li>
-                            <a href="./contacto.html">
-                                    Contacto
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./index.html#nosotros">
-                                    Acerca de nosotros
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://es-la.facebook.com/HotelSantaCruzCorferias/">
-                                <img src="./images/logo-facebook.png" alt="Logo facebook" class="imagenes-red-social">
-                            </a>
-                        </li>
-                        <li>    
-                            <a href="https://www.instagram.com/hotelsantacruzbogota/">
-                                <img src="./images/logo-instagram.png" alt="Logo instagram" class="imagenes-red-social">
-                            </a>
-                        </li>
-                        <li>    
-                            <button class="button-reservar">
-                                <a href="https://api.whatsapp.com/send?phone=573102734417&text=Hola%2C%20quiero%20hacer%20una%20reserva">
-                                        Reservar una habitación
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-info btn-lg align-middle">
+                                <a class="nav-link text-dark" href="https://api.whatsapp.com/send?phone=573102734417&text=Hola%2C%20quiero%20hacer%20una%20reserva">
+                                    Reservar una habitación
                                 </a>
                             </button>
-                        </li>    
+                        </li>
                     </ul>
-            </div>    
+                </div>
+            </div>
         </nav>
-        <!--FIN menu inicial, se debe quedar estatico a lo largo de la pagina-->    
     </header>
     
-
-    <main>
+    <main class="container padding-header">
         <h1 class="titulo-planes-pagina">
             Conoce nuestros planes
         </h1>
@@ -220,46 +217,60 @@
         </div>
     </main>
 
-
-    <footer class="main-container-footer">
-        <div class="izquierda-footer">
-            <h2 class="titulo-final">
+    <footer class="py-5">
+        <div class="d-flex justify-content-center justify-content-lg-start justify-content-xl-start">
+            <h2 class="px-5 text-center">
                 HOTEL SANTA CRUZ BOGOTÁ
             </h2>
-            <a href="https://es-la.facebook.com/HotelSantaCruzCorferias/">
-                <img src="./images/logo-facebook.png" alt="Logo facebook" class="imagenes-red-social red-social-footer">
-            </a>
-            <a href="https://www.instagram.com/hotelsantacruzbogota/">
-                <img src="./images/logo-instagram.png" alt="Logo instagram" class="imagenes-red-social red-social-footer">
-            </a>
         </div>
-        <ul class="lista-footer">
-            <li>
-                <a href="./index.html">
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="./galeria.html">
-                    Galeria
-                </a>
-            </li>
-            <li>
-                <a href="./planes.html">
-                    Planes
-                </a>
-            </li>
-            <li>
-                <a href="./contacto.html">
-                    Contacto
-                </a>
-            </li>
-            <li>
-                <a href="./index.html#nosotros">
-                    Acerca de nosotros
-                </a>
-            </li>
-        </ul>
+        <div class="container">
+            <div class="d-flex row">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 px-5 pt-5">
+                    <div class="d-flex justify-content-center justify-content-lg-start justify-content-xl-start">
+                        <a href="https://es-la.facebook.com/HotelSantaCruzCorferias/">
+                            <img src="./images/logo-facebook.png" alt="Logo facebook" class="me-1">
+                        </a>
+                        <a href="https://www.instagram.com/hotelsantacruzbogota/">
+                            <img src="./images/logo-instagram.png" alt="Logo instagram" class="ms-1">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 pt-3">
+                    <div class="d-flex justify-content-center justify-content-lg-end justify-content-xl-end">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action list-group-item-info bg-info p-0 py-1 text-center">
+                                <a href="./index.html" id="footer-lista">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-info bg-info p-0 py-1 text-center">
+                                <a href="./galeria.html" id="footer-lista">
+                                    Galeria
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-info bg-info p-0 py-1 text-center">
+                                <a href="./planes.html" id="footer-lista">
+                                    Planes
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-info bg-info p-0 py-1 text-center">
+                                <a href="./contacto.html" id="footer-lista">
+                                    Contacto
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-info bg-info p-0 py-1 text-center">
+                                <a href="./index.html#nosotros" id="footer-lista">
+                                    Acerca de nosotros
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>       
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

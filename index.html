@@ -13,304 +13,350 @@
     <title>Hotel Santa Cruz Bogotá</title>
 
 </head>
-<body>
-    <header>    
-        <!--menu inicial, se debe quedar estatico a lo largo de la pagina-->
-            <nav>
-            <div class="menu-container">      
-                    <ul class="menu">
-                        <li>
-                            <a href="#Inicio">
-                                <img src="./images/logo-hotel-santa-cruz-bogota.png" alt="Logo Hotel Santa Cruz Bogota" class="logo">
+
+<body class="bg-dark text-white">
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark px-3 py-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#Inicio">
+                    <img src="./images/logo-hotel-santa-cruz-bogota.png" alt="Logo Hotel Santa Cruz Bogota" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-middle" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-around w-100 p-3 fs-4 d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./planes.html">Planes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://es-la.facebook.com/HotelSantaCruzCorferias/">
+                                <img src="./images/logo-facebook.png" alt="Logo facebook" class="img-fluid">
                             </a>
                         </li>
-                        <li>
-                            <a href="#Inicio">
-                                    Inicio
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/hotelsantacruzbogota/">
+                                <img src="./images/logo-instagram.png" alt="Logo instagram" class="img-fluid">
                             </a>
                         </li>
-                        <li>
-                            <a href="./galeria.html">
-                                    Galeria
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./planes.html">
-                                    Planes
-                            </a>
-                        </li>
-                         <li>
-                            <a href="./contacto.html">
-                                    Contacto
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#nosotros">
-                                    Acerca de nosotros
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://es-la.facebook.com/HotelSantaCruzCorferias/">
-                                <img src="./images/logo-facebook.png" alt="Logo facebook" class="imagenes-red-social">
-                            </a>
-                        </li>
-                        <li>    
-                            <a href="https://www.instagram.com/hotelsantacruzbogota/">
-                                <img src="./images/logo-instagram.png" alt="Logo instagram" class="imagenes-red-social">
-                            </a>
-                        </li>
-                        <li>    
-                            <button class="button-reservar">
-                                <a href="https://api.whatsapp.com/send?phone=573102734417&text=Hola%2C%20quiero%20hacer%20una%20reserva">
-                                        Reservar una habitación
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-info btn-lg align-middle">
+                                <a class="nav-link text-dark" href="https://api.whatsapp.com/send?phone=573102734417&text=Hola%2C%20quiero%20hacer%20una%20reserva">
+                                    Reservar una habitación
                                 </a>
                             </button>
-                        </li>    
+                        </li>
                     </ul>
-            </div>    
+                </div>
+            </div>
         </nav>
-        <!--FIN menu inicial, se debe quedar estatico a lo largo de la pagina-->  
     </header>
     
-
-    <main class="main-container"> 
+    <main class="padding-header"> 
+        
         <!--espacio al hacer click en el logo vuelva al inicio-->
         <div id="Inicio"></div>
         <!--FIN espacio al hacer click en el logo vuelva al inicio-->
-        <section class="bienvenida">
-            <h1 class="titulo-principal">
+       
+        <section class="container">
+            <h1 class="fw-bold w-50">
                 Ofrecemos tranquilidad. Servicio extraordinario.
             </h1>
-            <div class="carrusel-uno">
-                <img src="./images/recepcion-hotel.jpg" alt="imagen carrusel uno">
-                <!--Quiero hacer un carrusel de fotos que esten cambiando constantemente, aun no se como, solo dejo una activa por el momento
-                    <img src="/images/recepcion-hotel.jpg" alt="imagen carrusel dos">
-                    <img src="/images/recepcion-hotel.jpg" alt="imagen carrusel tres">
-                    <img src="/images/recepcion-hotel.jpg" alt="imagen carrusel cuatro">
-                    <img src="/images/recepcion-hotel.jpg" alt="imagen carrusel cinco">
-                    <img src="/images/recepcion-hotel.jpg" alt="imagen carrusel seis">
-                FIN quiero hacer un carrusel de fotos que esten cambiando constantemente, aun no se como, solo dejo una activa por el momento-->
+            <div id="carouselInicial" class="carousel slide w-75 container" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="./images/carousel-fachada-hotel.jpeg" class="d-block w-100" alt="fachada-hotel">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-recepcion-hotel.jpg" class="d-block w-100" alt="recepcion-hotel">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-mascotas-bienvenidas.jpg" class="d-block w-100" alt="apt-308">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-apt-107.jpg" class="d-block w-100" alt="recepcion-hotel">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-apt-308.jpg" class="d-block w-100" alt="apt-308">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-cocina-apt-sup.jpg" class="d-block w-100" alt="recepcion-hotel">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-desayuno.jpg" class="d-block w-100" alt="apt-308">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-equipo-hotel-santa-cruz-bogota.jpg" class="d-block w-100" alt="recepcion-hotel">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-hab-204.jpg" class="d-block w-100" alt="apt-308">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-hab-301.jpg" class="d-block w-100" alt="recepcion-hotel">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-hab-302.jpg" class="d-block w-100" alt="apt-308">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-hab-303.jpg" class="d-block w-100" alt="recepcion-hotel">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-plan-cumpleanos.jpg" class="d-block w-100" alt="apt-308">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-plan-romantico.jpg" class="d-block w-100" alt="recepcion-hotel">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/carousel-plan-visa.png" class="d-block w-100" alt="apt-308">
+                        </div>
+                    </div>
             </div>
         </section>
 
-        <section class="reservar-directo">
-            <p class="texto-reservar-directo">
-                Reserva directamente con nosotros, conseguirás mejores precios, seguridad y respaldo. 
-            </p>
-            <button class="button-reservar-cuerpo">
-                <a href="https://api.whatsapp.com/send?phone=573102734417&text=Hola%2C%20quiero%20hacer%20una%20reserva">
+        <section class="container-fluid bg-info w-100" id="reserva-directo-card">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title h2 px-1">
+                    Reserva directamente con nosotros, conseguirás mejores precios, seguridad y respaldo.
+                </h5>
+                <a href="https://api.whatsapp.com/send?phone=573102734417&text=Hola%2C%20quiero%20hacer%20una%20reserva" class="btn btn-dark btn-lg m-3 align-self-center">
                     Reservar una habitación
                 </a>
-            </button>
+            </div>
         </section>
         
-        <section class="main-container-servicios-gratuitos">
-            <h2 class="titulo-servicios">
+        <section class="container d-flex flex-column align-items-center">
+            <h2 class="py-5">
                 Servicios gratuitos
             </h2>
-            <div class="servicios-gratuitos">
-                <section class="servicio-gratuito-descripcion">
-                    <img src="./images/aeropuerto-eldorado-bogota.jpg" alt="servicio gratuito recogida aeropuerto" class="imagen-servicio-gratuito">
-                    <h3>
-                        Servicio gratuito recogida en el aeropuerto
+            <div class="row container">
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-inline-flex flex-column">
+                    <img src="./images/aeropuerto-eldorado-bogota.jpg" alt="servicio gratuito recogida aeropuerto" class="img-fluid">
+                    <h3 class="align-self-center">
+                        Recogida en el aeropuerto
                     </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illum minima ipsam quae culpa nobis tempora similique libero, perspiciatis rerum est quia possimus aut, facere, nemo blanditiis. Minus, unde soluta.
-                    </p>
-                </section>
-                <section class="servicio-gratuito-descripcion">
-                    <img src="./images/logo-parqueadero.png" alt="servicio gratuito de parqueadero" class="imagen-servicio-gratuito">
-                    <h3>
-                        Servicio gratuito parqueadero
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-inline-flex flex-column">
+                    <img src="./images/logo-parqueadero.png" alt="servicio gratuito de parqueadero" class="img-fluid">
+                    <h3 class="align-self-center">
+                        Parqueadero
                     </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illum minima ipsam quae culpa nobis tempora similique libero, perspiciatis rerum est quia possimus aut, facere, nemo blanditiis. Minus, unde soluta.
-                    </p>
-                </section>
-                <section class="servicio-gratuito-descripcion">
-                    <img src="./images/desayuno.jpg" alt="servicio gratuito desayuno" class="imagen-servicio-gratuito">
-                    <h3>
-                        Servicio gratuito desayuno
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-inline-flex flex-column">
+                    <img src="./images/desayuno.jpg" alt="servicio gratuito desayuno" class="img-fluid">
+                    <h3 class="align-self-center">
+                        Desayuno
                     </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illum minima ipsam quae culpa nobis tempora similique libero, perspiciatis rerum est quia possimus aut, facere, nemo blanditiis. Minus, unde soluta.
-                    </p>
-                </section>
+                </div> 
             </div>
-            <button class="button-reservar-cuerpo-dos">
-                <a href="https://api.whatsapp.com/send?phone=573102734417&text=Hola%2C%20quiero%20hacer%20una%20reserva">
-                    Solicita tus servicios gratuitos ya
-                </a>
-            </button>
+            <a href="https://api.whatsapp.com/send?phone=573102734417&text=Hola%2C%20quiero%20hacer%20una%20reserva" class="btn btn-info btn-lg m-3 align-self-center">
+                Solicita tus servicios gratuitos ya
+            </a>
         </section>
         
-        <section class="ubicacion">
-            <div class="texto-ubicacion">
-                <h2 class="titulo-ubicacion">
-                    La mejor ubicacion en Bogotá
+        <section class="container d-flex flex-column py-5">
+            <div class="container">
+                <div class="row">        
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7916468652247!2d-74.09828508545277!3d4.631226996635707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bdebfb7c99d%3A0x38edcc5d3977824f!2sHotel%20Santa%20Cruz%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1667311485945!5m2!1ses-419!2sco" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div> 
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column align-self-center ">
+                        <h2 class="p-5 display-5">
+                            La mejor ubicación en Bogotá
+                        </h2>
+                        <p class="align-self-center h5 ps-3">
+                            Si necesitas trasladarte con facilidad en Bogotá, aprovechando eficazmente tu tiempo  somos tu solución. 
+                            <br> <br>
+                            Estamos ubicados en el barrio Quinta Paredes, punto estrategico, seguro, tranquilo  con facil acceso a vias principales y muy cerca de los principales puntos de interés. 
+                            <br> <br>
+                            -5 minutos🚶‍♂️de: Embajada Americana y centro de convenciones Corferias y Agora.
+                            <br> <br>
+                            - A 15 minutos 🚗  de: Aeropuerto, Terminal terrestre, Estadio el Campín, Movistar Arena, Monserrate y parque Simón Bolivar
+                        </p> 
+                    </div> 
+                </div>
+            </div>    
+        </section>
+
+        <section class="container d-flex flex-column py-5">
+            <div class="container">
+                <div class="row">        
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column align-self-center">
+                        <h2 class="py-5 align-self-center display-5">
+                            Conoce nuestras instalaciones
+                        </h2>
+                        <p class="h5 ps-3">
+                            Contamos con cálidos y modernos espacios, diseñados para que tu estadía sea confortable y muy confiable. 
+                            <br><br>
+                            Ideal para a planes corporativos y familiares. Larga y corta estadía.
+                            <br><br>
+                            Te invitamos a que conozcas nuestras instalaciones
+                        </p>
+                        <a href="./galeria.html" class="btn btn-info btn-lg m-3 align-self-center">Más imagenes</a>
+                    </div> 
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <img src="./images/fachada-hotel.jpeg" alt="fachada hotel Santa Cruz Bogota" class="img-fluid">
+                    </div> 
+                </div>
+            </div>    
+        </section>    
+        
+        <section class="container d-flex flex-column">
+            <div class="align-self-center">
+                <h2 class="py-5 align-self-center display-4">
+                    Conoce nuestros planes
                 </h2>
-                <p class="parrafo-ubicacion">
-                    Si necesitas trasladarte con facilidad en Bogotá, aprovechando eficazmente tu tiempo  somos tu solución. 
-                    <br> <br>
-                    Estamos ubicados en el barrio Quinta Paredes, punto estrategico, seguro, tranquilo  con facil acceso a vias principales y muy cerca de los principales puntos de interés. 
-                    <br> <br>
-                    -5 minutos🚶‍♂️de: Embajada Americana y centro de convenciones Corferias y Agora.
-                    <br> <br>
-                    - A 15 minutos 🚗  de: Aeropuerto, Terminal terrestre, Estadio el Campín, Movistar Arena, Monserrate y parque Simón Bolivar
-                </p>
             </div>
-            <div class="link-ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.791646846309!2d-74.0960964!3d4.631227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bdebfb7c99d%3A0x38edcc5d3977824f!2sHotel%20Santa%20Cruz%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1664241687623!5m2!1ses-419!2sco" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex flex-column align-self-center">
+                        <img src="./images/plan-romantico.jpg" alt="plan romantico" class="img-fluid">
+                        <h4 class="align-self-center">
+                            Plan Romántico
+                        </h4>
+                    </div>    
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex flex-column align-self-center">
+                        <img src="./images/aeropuerto-eldorado-bogota.jpg" alt="plan conexion" class="img-fluid">
+                        <h4 class="align-self-center">
+                            Plan conexión
+                        </h4>
+                    </div>  
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex flex-column align-self-center">
+                        <img src="./images/plan-visa.png" alt="plan visa" class="img-fluid">
+                        <h4 class="align-self-center"> 
+                            Plan Visa
+                        </h4>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex flex-column align-self-center">
+                        <img src="./images/plan-cumpleanos.jpg" alt="plan cumpleanos" class="img-fluid">
+                        <h4 class="align-self-center">
+                            Plan cumpleaños
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="align-self-center">
+                <a href="./planes.html" class="btn btn-info btn-lg m-3 align-self-center">
+                    Conoce más de nuestros planes
+                </a>
             </div>
         </section>
 
-        <section class="main-container-galeria">
-            <div class="galeria">    
-                <h2 class="titulo-galeria">
-                    Conoce nuestras instalaciones
-                </h2>
-                <p class="parrafo-galeria"> 
-                    Contamos con cálidos y modernos espacios, diseñados para que tu estadía sea confortable y muy confiable. 
-                    <br><br>
-                    Ideal para a planes corporativos y familiares. Larga y corta estadía.
-                    <br><br>
-                    Te invitamos a que conozcas nuestras instalaciones
-                </p>
-                <button class="boton-galeria"> 
-                    <a href="./galeria.html">
-                        Mas imagenes
-                    </a>
-                </button>
-            </div>
-            <div>    
-                <img src="./images/fachada-hotel.jpeg" alt="fachada hotel Santa Cruz Bogota" class="imagen-galeria">
-                
-            </div>
-        </section>
-        
-        <section class="main-container-planes">
-            <h2 class="titulo-planes">
-                Conoce nuestros planes
-            </h2>
-            <!--Quiero que esta seccion sea un carrusel-->
-            <div class="tipos-de-planes">
-                <section class="planes">
-                    <img src="./images/plan-romantico.jpg" alt="plan romantico" class="imagen-plan">
-                    <h3 class="subtitulo-plan">
-                        Plan Romántico
-                    </h3>
-                </section>    
-                <section class="planes">
-                    <img src="./images/aeropuerto-eldorado-bogota.jpg" alt="plan conexion" class="imagen-plan">
-                    <h3 class="subtitulo-plan">
-                        Plan conexión
-                    </h3>
-                </section>  
-                <section class="planes">
-                    <img src="./images/plan-visa.png" alt="plan visa" class="imagen-plan">
-                    <h3 class="subtitulo-plan"> 
-                        Plan Visa
-                    </h3>
-                </section>
-                <section class="planes">
-                    <img src="./images/plan-cumpleanos.jpg" alt="plan cumpleanos" class="imagen-plan">
-                    <h3 class="subtitulo-plan">
-                        Plan cumpleaños
-                    </h3>
-                </section>
-            </div>
-            <!--FIN uiero que esta seccion sea un carrusel-->
-            <button class="boton-planes">
-                <a href="./planes.html">
-                    Conoce mas de nuestros planes
-                </a>
-            </button>
-        </section>
-
-        <section class="main-container-mascotas">
-            <div class="mascotas">
-                <h2 class="texto-mascotas">
-                    Tu mascota es bienvenida. Conoce las reglas de la casa con el siguiente boton.
-                </h2>
-                <button class="boton-mascotas">
-                    <a href="./mascotas.html">
-                        Más información
-                    </a>
-                </button>
-             </div>
-            <img src="./images/mascotas-bienvenidas.jpg" alt="se aceptan mascotas" class="imagen-mascota">
+        <section class="container d-flex flex-column py-5">
+            <div class="container">
+                <div class="row">        
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column align-self-center">
+                        <h2 class="py-5 align-self-center display-3">
+                            Tu mascota es bienvenida. Conoce las reglas de la casa con el siguiente botón.
+                        </h2>
+                        <a href="./mascotas.html" class="btn btn-info btn-lg m-3 align-self-center">Más información</a>
+                    </div> 
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <img src="./images/mascotas-bienvenidas.jpg" alt="se aceptan mascotas" class="img-fluid">
+                    </div> 
+                </div>
+            </div>    
         </section>
 
         <section class="main-container-bogota">
-                <h2 class="texto-bogota">
+                <h2 class="h1 px-5">
                     Orgullosos de Bogotá
                 </h2>
-                <button class="boton-bogota">
-                    <a href="https://www.bogotadc.travel/">
-                        Conoce mas de Bogotá
-                    </a>
-                </button>
+                <div class="d-flex p-4">
+                    <a href="https://www.bogotadc.travel/" class="btn btn-info btn-lg m-3 align-self-center">Conoce más de Bogotá</a>
+                </div>
         </section>
 
-        <section class="nosotros">
+        <section class="container d-flex flex-column py-5">
             <div id="nosotros"></div>
-            <img src="./images/equipo-hotel-santa-cruz-bogota.jpg" alt="Equipo Hotel Santa Cruz Bogota" class="imagen-nosotros">
-            <div class="contenido-nosotros">
-                <h2 class="titulo-nosotros">
-                    ¿Qué nos diferencia?
-                </h2>
-                <p class="texto-nosotros">
-                    Somos una empresa familiar colombiana con un gran sentido de vocación al servicio. Nos apasiona ejercer nuestra actividad profesional, manteniendo siempre una actitud de empatía, honestidad y amabilidad.
-                    <br><br>
-                    Te invitamos a compartir una bonita experiencia en Bogotá, estamos pendientes desde tu llegada al aeropuerto, recibiéndote con un delicioso café de la casa y facilitándote soluciones inmediatas.
-                    <br><br>
-                    Nuestro compromiso: Tu tranquilidad, promover una imagen positiva de nuestra ciudad .
-                </p>
-            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column align-self-center">
+                        <h2 class="align-self-center display-5 py-3">
+                            ¿Qué nos diferencia?
+                        </h2>
+                        <p class="fs-6">
+                            Somos una empresa familiar colombiana con un gran sentido de vocación al servicio. Nos apasiona ejercer nuestra actividad profesional, manteniendo siempre una actitud de empatía, honestidad y amabilidad.
+                            <br><br>
+                            Te invitamos a compartir una bonita experiencia en Bogotá, estamos pendientes desde tu llegada al aeropuerto, recibiéndote con un delicioso café de la casa y facilitándote soluciones inmediatas.
+                            <br><br>
+                            Nuestro compromiso: Tu tranquilidad, promover una imagen positiva de nuestra ciudad.
+                        </p>
+                    </div> 
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <img src="./images/equipo-hotel-santa-cruz-bogota.jpg" alt="Equipo Hotel Santa Cruz Bogota" class="img-fluid">
+                    </div> 
+                </div>
+            </div>    
         </section>
+
     </main>
 
-
-    <footer class="main-container-footer">
-        <div class="izquierda-footer">
-            <h2 class="titulo-final">
+    <footer class="py-5">
+        <div class="d-flex justify-content-center justify-content-lg-start justify-content-xl-start">
+            <h2 class="px-5 text-center">
                 HOTEL SANTA CRUZ BOGOTÁ
             </h2>
-            <a href="https://es-la.facebook.com/HotelSantaCruzCorferias/">
-                <img src="./images/logo-facebook.png" alt="Logo facebook" class="imagenes-red-social red-social-footer">
-            </a>
-            <a href="https://www.instagram.com/hotelsantacruzbogota/">
-                <img src="./images/logo-instagram.png" alt="Logo instagram" class="imagenes-red-social red-social-footer">
-            </a>
         </div>
-        <ul class="lista-footer">
-            <li>
-                <a href="#Inicio">
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="./galeria.html">
-                    Galeria
-                </a>
-            </li>
-            <li>
-                <a href="./planes.html">
-                    Planes
-                </a>
-            </li>
-            <li>
-                <a href="./contacto.html">
-                    Contacto
-                </a>
-            </li>
-            <li>
-                <a href="#nosotros">
-                    Acerca de nosotros
-                </a>
-            </li>
-        </ul>
+        <div class="container">
+            <div class="d-flex row">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 px-5 pt-5">
+                    <div class="d-flex justify-content-center justify-content-lg-start justify-content-xl-start">
+                        <a href="https://es-la.facebook.com/HotelSantaCruzCorferias/">
+                            <img src="./images/logo-facebook.png" alt="Logo facebook" class="me-1">
+                        </a>
+                        <a href="https://www.instagram.com/hotelsantacruzbogota/">
+                            <img src="./images/logo-instagram.png" alt="Logo instagram" class="ms-1">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 pt-3">
+                    <div class="d-flex justify-content-center justify-content-lg-end justify-content-xl-end">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action list-group-item-info bg-info p-0 py-1 text-center">
+                                <a href="#Inicio" id="footer-lista">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-info bg-info p-0 py-1 text-center">
+                                <a href="./galeria.html" id="footer-lista">
+                                    Galeria
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-info bg-info p-0 py-1 text-center">
+                                <a href="./planes.html" id="footer-lista">
+                                    Planes
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-info bg-info p-0 py-1 text-center">
+                                <a href="./contacto.html" id="footer-lista">
+                                    Contacto
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-info bg-info p-0 py-1 text-center">
+                                <a href="#nosotros" id="footer-lista">
+                                    Acerca de nosotros
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>       
     </footer>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
