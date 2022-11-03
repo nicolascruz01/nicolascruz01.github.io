@@ -1,8 +1,32 @@
+.body-general {
+    background-color: black;
+}
+
+.header-general {
+  background-color: black;
+}
+
 /*INICIO padding despues del header*/
 .padding-header {
     padding-top: 130px;
 }
 /*FIN padding despues del header*/
+
+/*INICIO botones transiciones*/
+#boton-oscuro:hover {
+  background-color: aqua;
+  border-color: black;
+  color: black;
+  transition: background-color 1s linear;
+}
+#boton-claro:hover {
+  background-color: black;
+  border-color: aqua;
+  color: aqua;
+  transition: background-color 1s linear;
+}
+/*FIN botones transiciones*/
+
 
 /*INICIO card despues del primer carrusel index*/
 #reserva-directo-card {
