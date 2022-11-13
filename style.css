@@ -6,6 +6,50 @@
   background-color: black;
 }
 
+/*INICIO texto-bienvenida-index*/
+@media (min-width: 1200px) {
+  .texto-bienvenida {
+  font-size: 60px;
+}
+}
+
+@media (max-width: 1199.99px) {
+  .texto-bienvenida {
+  font-size: 50px;
+}
+}
+
+@media (max-width: 768px) {
+  .texto-bienvenida {
+  font-size: 40px;
+}
+}
+
+@media (max-width: 576px) {
+  .texto-bienvenida {
+  font-size: 30px;
+}
+}
+
+@media (max-width: 285px) {
+  .texto-bienvenida {
+  font-size: 25px;
+}
+}
+
+@media (max-width: 220px) {
+  .texto-bienvenida {
+  font-size: 20px;
+}
+}
+
+@media (max-width: 170px) {
+  .texto-bienvenida {
+  font-size: 10px;
+}
+}
+/*FIN texto-bienvenida-index*/
+
 /*INICIO padding despues del header*/
 .padding-header {
     padding-top: 130px;
@@ -26,7 +70,6 @@
   transition: background-color 1s linear;
 }
 /*FIN botones transiciones*/
-
 
 /*INICIO card despues del primer carrusel index*/
 #reserva-directo-card {
