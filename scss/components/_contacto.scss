@@ -1,0 +1,29 @@
+@media (min-width: 1200px) {
+    .texto-contacto {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1199.99px) {
+    .texto-contacto {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+    .texto-contacto {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+    .texto-contacto {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 285px) {
+    .texto-contacto {
+    font-size: 5px;
+  }
+}

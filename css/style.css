@@ -6,7 +6,29 @@
   background-color: black;
 }
 
-/*INICIO texto-bienvenida-index*/
+.padding-header {
+  padding-top: 130px;
+}
+
+#boton-oscuro:hover {
+  background-color: aqua;
+  border-color: black;
+  color: black;
+  transition: background-color 1s linear;
+}
+
+#boton-claro:hover {
+  background-color: black;
+  border-color: aqua;
+  color: aqua;
+  transition: background-color 1s linear;
+}
+
+#footer-lista {
+  text-decoration: none;
+  color: black;
+}
+
 @media (min-width: 1200px) {
   .texto-bienvenida {
     font-size: 60px;
@@ -42,37 +64,11 @@
     font-size: 10px;
   }
 }
-/*FIN texto-bienvenida-index*/
-/*INICIO padding despues del header*/
-.padding-header {
-  padding-top: 130px;
-}
-
-/*FIN padding despues del header*/
-/*INICIO botones transiciones*/
-#boton-oscuro:hover {
-  background-color: aqua;
-  border-color: black;
-  color: black;
-  transition: background-color 1s linear;
-}
-
-#boton-claro:hover {
-  background-color: black;
-  border-color: aqua;
-  color: aqua;
-  transition: background-color 1s linear;
-}
-
-/*FIN botones transiciones*/
-/*INICIO card despues del primer carrusel index*/
 #reserva-directo-card {
   padding: 30px 0px;
   margin: 30px 0px;
 }
 
-/*FIN card despues del primer carrusel index*/
-/*INICIO mapa hotel responsive index*/
 .map-responsive {
   overflow: hidden;
   padding-bottom: 50%;
@@ -88,8 +84,6 @@
   position: absolute;
 }
 
-/*FIN mapa hotel responsive index*/
-/*INICIO bogota responsive index*/
 .main-container-bogota {
   margin-bottom: 100px;
   height: 300px;
@@ -103,15 +97,6 @@
   justify-content: center;
 }
 
-/*FIN bogota responsive index*/
-/*INICIO footer*/
-#footer-lista {
-  text-decoration: none;
-  color: black;
-}
-
-/*FIN footer*/
-/*INICIO texto-contacto*/
 @media (min-width: 1200px) {
   .texto-contacto {
     font-size: 23px;
@@ -137,6 +122,5 @@
     font-size: 5px;
   }
 }
-/*FIN texto-contacto*/
 
 /*# sourceMappingURL=style.css.map */
